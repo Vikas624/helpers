@@ -8,7 +8,7 @@ export interface verify {
 }
 
 export interface generate {
-  payload: payload;
+  payload: payload | string;
   expiresIn?: string;
   secret?: string;
 }

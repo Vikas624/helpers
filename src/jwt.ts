@@ -14,7 +14,7 @@ export const generate = ({
   const {JWT_SECRET} = getEnv();
   const opts = expiresIn ? {expiresIn} : {};
   return JWT.sign(
-      {...payload, timestamp: Date.now()},
+      {payload, timestamp: Date.now()},
       secret || JWT_SECRET,
       opts,
   );
