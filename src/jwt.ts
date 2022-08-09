@@ -20,6 +20,7 @@ export const generate = ({
   );
 };
 
+
 export const verify = async ({token, secret = null}: jwt.verify) => {
   const {JWT_SECRET} = getEnv();
   try {
